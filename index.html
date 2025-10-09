@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresso Azevedo - Transporte e Logística Nacional</title>
+    <!-- Carregamento do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Incluindo Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Configuração de fonte padrão e cores */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Cor de fundo suave */
+        }
+        .text-primary { color: #004AAD; } /* Azul Scania/Transporte */
+        .bg-primary { background-color: #004AAD; }
+        .text-secondary { color: #1e3a8a; } /* Azul mais escuro */
+        .bg-accent { background-color: #FFC000; } /* Amarelo de destaque */
+
+        /* Gradiente para a Seção Hero (substitui a imagem) */
+        .hero-gradient {
+            background: linear-gradient(135deg, #004AAD 0%, #1e3a8a 100%);
+        }
+
+        /* Animação de hover para cards */
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 74, 173, 0.2); /* Sombra azul suave */
+        }
+
+        /* Estilo para botão de contato */
+        .btn-contact {
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .btn-contact:hover {
+            background-color: #FFD700;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navegação (Header) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#home" class="text-3xl font-extrabold text-primary tracking-tight">
+                    EXPRESSO <span class="text-secondary font-light">Azevedo</span>
+                </a>
+                
+                <!-- Menu de Navegação -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Sobre</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Serviços</a>
+                    <a href="#atuacao" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Atuação & Frota</a>
+                    <a href="#seguranca" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Segurança</a>
+                    <a href="#contato" class="bg-accent text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition duration-150 ease-in-out">Contato</a>
+                </nav>
+                
+                <!-- Botão Menu Mobile (Hamburger) -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-primary focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">Sobre</a>
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">Serviços</a>
+                <a href="#atuacao" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">Atuação & Frota</a>
+                <a href="#seguranca" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">Segurança</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary mt-2">Fale Conosco</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Seção de Destaque (Hero) - Agora com gradiente e ícone de caminhão -->
+        <section id="home" class="hero-gradient flex flex-col items-center justify-center text-center py-20 h-[70vh]">
+            <div class="p-10 rounded-xl max-w-2xl mx-4">
+                <!-- Ícone de Caminhão Grande -->
+                <i class="fas fa-truck text-accent text-7xl mb-6 animate-pulse"></i>
+
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
+                    Logística Eficiente, <span class="text-accent">Entrega Garantida</span>
+                </h1>
+                <p class="text-xl text-gray-100 mb-8">
+                    Sua parceira de transporte e logística em todo o território nacional.
+                </p>
+                <a href="#contato" class="btn-contact bg-accent text-gray-900 px-8 py-3 rounded-full font-bold text-lg inline-block shadow-lg hover:shadow-xl">
+                    Solicite seu Orçamento
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós (Missão e Visão) -->
+        <section id="sobre" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-secondary text-center mb-12">
+                    Nossa Missão & Visão
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    
+                    <!-- Missão -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-handshake text-primary text-3xl mr-3"></i>
+                            <h3 class="text-2xl font-bold text-primary">Nossa Missão</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Atuar de forma <b>transparente e responsável</b> <B>a</B> partir da prestação de serviços de transporte e logística, mantendo o foco permanente em qualificação, excelência e melhoria contínua, a fim de satisfazer plenamente as necessidades de nossos parceiros, contribuindo com seus resultados e com o desenvolvimento da sociedade.
+                        </p>
+                    </div>
+
+                    <!-- Visão -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-eye text-primary text-3xl mr-3"></i>
+                            <h3 class="text-2xl font-bold text-primary">Nossa Visão</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Ser encarada como uma <b>parceira de negócios</b> de seus clientes, destacando-se pela <b>qualidade, responsabilidade e eficácia</b> na prestação dos serviços de transporte e logística.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="py-16 md:py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-secondary text-center mb-12">
+                    Serviços de Transporte
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Carga Fechada -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover border-t-4 border-primary">
+                        <div class="flex items-center mb-4">
+                             <i class="fas fa-box-open text-primary text-3xl mr-4"></i>
+                            <h3 class="text-2xl font-bold text-primary">Carga Fechada (Lotação)</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Atendemos qualquer localidade no país de <b>forma dedicada e exclusiva</b>. Seu carregamento preenche o veículo, garantindo agilidade e total controle sobre a entrega. Ideal para grandes volumes e urgências.
+                        </p>
+                    </div>
+
+                    <!-- Carga Expressa -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover border-t-4 border-primary">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-tachometer-alt text-primary text-3xl mr-4"></i>
+                            <h3 class="text-2xl font-bold text-primary">Carga Expressa Dedicada</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Disponibilizamos <b>veículo dedicado</b> para o transporte de sua mercadoria, independente da quantidade, volumes e local. Solução rápida para entregas urgentes e prioritárias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Área de Atuação e Frota - Sem Mapa -->
+        <section id="atuacao" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    
+                    <!-- Área de Atuação (Texto Enfatizado) -->
+                    <div class="text-center lg:text-left p-6 bg-gray-50 rounded-xl shadow-inner">
+                        <i class="fas fa-globe-americas text-primary text-5xl mb-4"></i>
+                        <h2 class="text-4xl font-extrabold text-secondary mb-4">
+                            Cobertura Nacional
+                        </h2>
+                        <p class="text-xl text-gray-700 leading-relaxed">
+                            A <b>Expresso Azevedo</b> atua em <b>todo o território nacional</b>. Nossa logística é planejada para conectar qualquer ponto do país com eficiência e segurança, garantindo que sua mercadoria chegue onde precisa, de Norte a Sul.
+                        </p>
+                    </div>
+
+                    <!-- Frota -->
+                    <div class="p-6">
+                        <i class="fas fa-dolly text-primary text-5xl mb-4"></i>
+                        <h2 class="text-4xl font-extrabold text-secondary mb-6">
+                            Frota Versátil
+                        </h2>
+                        <p class="text-xl text-gray-700 mb-6">
+                            Contamos com os mais diversos equipamentos para atender a sua necessidade:
+                        </p>
+                        <ul class="space-y-3 text-lg text-gray-700">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> <b>Caminhões</b> Toco e Truck</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> <b>Carretas</b> Baú, Siders e Graneleiras</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> <b>Veículos de Médio e Pequeno Porte</b> (VUC)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Segurança e Atendimento Logístico -->
+        <section id="seguranca" class="py-16 md:py-24 bg-gray-100">
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                 <h2 class="text-4xl font-extrabold text-secondary text-center mb-12">
+                    Segurança e Suporte Logístico
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    
+                    <!-- Seguro da Carga -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover border-t-4 border-accent">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-shield-alt text-accent text-3xl mr-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800">Seguro e Gerenciamento de Risco</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Todas as mercadorias transportadas por nós têm cobertura de apólices de seguro <b>RCTR-C e RCF-DC</b>, garantidas pelas melhores seguradoras.
+                        </p>
+                        <p class="text-gray-700 mt-3 leading-relaxed">
+                            Contamos também com a parceria e serviços da empresa <b>Buonny</b>, uma das principais gerenciadoras de risco do país, assegurando tranquilidade total.
+                        </p>
+                    </div>
+
+                    <!-- Central de Atendimento e Logística -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover border-t-4 border-accent">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-headset text-accent text-3xl mr-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800">Consultoria e Atendimento Técnico</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Nossa <b>Central de Atendimento</b> conta com profissionais qualificados <b>e</b> com conhecimentos técnicos para viabilizar <b>estudos logísticos</b> e disponibilizar sempre a <b>melhor solução</b> para o transporte de seus produtos, equipamentos e insumos.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (Contato) -->
+    <footer id="contato" class="bg-primary py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <h2 class="text-4xl font-extrabold text-white mb-4">
+                Aguardamos seu Contato!
+            </h2>
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                Fale diretamente com nossa central para viabilizar a melhor solução logística para o seu negócio.
+            </p>
+
+            <!-- Detalhes do Contato -->
+            <div class="bg-white p-8 rounded-xl shadow-2xl inline-block max-w-md w-full">
+                <p class="text-lg font-semibold text-gray-600">Representante Comercial:</p>
+                <p class="text-3xl font-extrabold text-secondary mb-4">Fernando Azevedo</p>
+                
+                <p class="text-xl font-bold text-gray-800 flex items-center justify-center mb-4">
+                    <i class="fas fa-phone-alt text-primary mr-2"></i>
+                    <a href="tel:+5541988046018" class="hover:text-primary transition duration-150 ease-in-out">
+                       (41) 98804-6018
+                    </a>
+                </p>
+                
+                <a href="https://api.whatsapp.com/send?phone=5541988046018&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20de%20transporte." target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full font-bold text-lg inline-flex items-center shadow-lg hover:bg-green-600 transition duration-150 ease-in-out">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i>
+                    Fale Conosco pelo WhatsApp
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-400 mt-10">
+                &copy; <span id="year"></span> Expresso Azevedo. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript para interatividade e ano atual -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Atualiza o ano no rodapé
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Lógica do Menu Mobile
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Fecha o menu mobile ao clicar em um link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
