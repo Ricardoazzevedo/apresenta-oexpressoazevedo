@@ -57,11 +57,18 @@
                 </a>
                 
                 <!-- Menu de Navegação -->
-                <nav class="hidden md:flex space-x-8">
+                <nav class="hidden md:flex space-x-8 items-center">
                     <a href="#sobre" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Sobre</a>
                     <a href="#servicos" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Serviços</a>
                     <a href="#atuacao" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Atuação & Frota</a>
                     <a href="#seguranca" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium">Segurança</a>
+                    
+                    <!-- Link Portal do Motorista -->
+                    <a href="https://forms.gle/Mq3AYc5LwGsH5HwA7" target="_blank" class="text-gray-700 hover:text-primary transition duration-150 ease-in-out font-medium flex items-center">
+                        <i class="fas fa-file-upload mr-1.5"></i>
+                        Portal do Motorista
+                    </a>
+                    
                     <a href="#contato" class="bg-accent text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition duration-150 ease-in-out">Contato</a>
                 </nav>
                 
@@ -81,6 +88,13 @@
                 <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">Serviços</a>
                 <a href="#atuacao" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">Atuação & Frota</a>
                 <a href="#seguranca" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">Segurança</a>
+                
+                <!-- Link Portal do Motorista (Mobile) -->
+                <a href="https://forms.gle/Mq3AYc5LwGsH5HwA7" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary flex items-center">
+                    <i class="fas fa-file-upload mr-1.5"></i>
+                    Portal do Motorista
+                </a>
+
                 <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary mt-2">Fale Conosco</a>
             </div>
         </div>
@@ -223,7 +237,7 @@
                             <i class="fas fa-shield-alt text-accent text-3xl mr-4"></i>
                             <h3 class="text-2xl font-bold text-gray-800">Seguro e Gerenciamento de Risco</h3>
                         </div>
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-700 leading-relaxed">
                             Todas as mercadorias transportadas por nós têm cobertura de apólices de seguro <b>RCTR-C e RCF-DC</b>, garantidas pelas melhores seguradoras.
                         </p>
                         <p class="text-gray-700 mt-3 leading-relaxed">
@@ -259,7 +273,7 @@
                 Fale diretamente com nossa central para viabilizar a melhor solução logística para o seu negócio.
             </p>
 
-            <!-- Detalhes do Contato e Documentos -->
+            <!-- Detalhes do Contato -->
             <div class="bg-white p-8 rounded-xl shadow-2xl inline-block max-w-md w-full">
                 <p class="text-lg font-semibold text-gray-600">Representante Comercial:</p>
                 <p class="text-3xl font-extrabold text-secondary mb-4">Fernando Azevedo</p>
@@ -275,26 +289,34 @@
                     <i class="fab fa-whatsapp text-xl mr-2"></i>
                     Fale Conosco pelo WhatsApp
                 </a>
+            </div>
+
+            <!-- Links de Navegação e Documentos do Rodapé -->
+            <div class="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2">
+                <a href="#sobre" class="text-gray-300 hover:text-white hover:underline transition duration-150 ease-in-out">Sobre</a>
+                <a href="#servicos" class="text-gray-300 hover:text-white hover:underline transition duration-150 ease-in-out">Serviços</a>
+                <a href="#atuacao" class="text-gray-300 hover:text-white hover:underline transition duration-150 ease-in-out">Atuação</a>
+                <a href="#seguranca" class="text-gray-300 hover:text-white hover:underline transition duration-150 ease-in-out">Segurança</a>
                 
-                <!-- NOVO: Documentos para Download -->
-                <div class="mt-8 pt-4 border-t border-gray-200">
-                    <p class="text-lg font-semibold text-secondary mb-3">Documentos para Clientes:</p>
-                    <ul class="space-y-2 text-left w-full mx-auto">
-                        <li>
-                            <!-- Documento 1: Arquivo ZIP (Documentos Diversos) -->
-                            <a href="https://drive.google.com/file/d/16AuhI0F7sa7IpSVLd09YB0zCAwltAUhW/view?usp=drive_link" download="Documentos Expresso Azevedo.zip" class="text-primary hover:text-secondary font-medium transition duration-150 ease-in-out inline-flex items-center">
-                                <i class="fas fa-file-archive mr-2"></i> Documentos Expresso Azevedo.zip
-                            </a>
-                        </li>
-                        <li>
-                            <!-- Documento 2: Arquivo ZIP (Apólice) - Alteração aplicada aqui -->
-                            <a href="https://drive.google.com/file/d/1YzCKnoKVJCdz7C1vYHa9Q1I6jFgtlAqS/view?usp=drive_link" download="Apolice_Seguro_RCTR-C.pdf" class="text-primary hover:text-secondary font-medium transition duration-150 ease-in-out inline-flex items-center">
-                                <i class="fas fa-file-archive mr-2"></i> Apólice de Seguro.zip
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- FIM NOVO -->
+                <!-- NOVO: Link Documentos (Substitui WinRAR 1) -->
+                <a href="https://drive.google.com/file/d/16AuhI0F7sa7IpSVLd09YB0zCAwltAUhW/view?usp=drive_link" target="_blank" class="text-accent hover:text-white hover:underline transition duration-150 ease-in-out font-bold flex items-center justify-center">
+                    <i class="fas fa-file-download mr-1.5"></i>
+                    Documentos
+                </a>
+                
+                <!-- NOVO: Link Apólice de Seguro (Substitui WinRAR 2) -->
+                <a href="https://drive.google.com/file/d/1YzCKnoKVJCdz7C1vYHa9Q1I6jFgtlAqS/view?usp=drive_link" target="_blank" class="text-accent hover:text-white hover:underline transition duration-150 ease-in-out font-bold flex items-center justify-center">
+                    <i class="fas fa-file-download mr-1.5"></i>
+                    Apólice de Seguro
+                </a>
+            </div>
+
+            <!-- Link do Portal do Motorista (Rodapé) -->
+            <div class="mt-8">
+                <a href="https://forms.gle/Mq3AYc5LwGsH5HwA7" target="_blank" class="text-gray-300 hover:text-white hover:underline transition duration-150 ease-in-out font-medium flex items-center justify-center">
+                    <i class="fas fa-file-upload mr-1.5"></i>
+                    Portal do Motorista (Envio de Canhoto)
+                </a>
             </div>
 
             <p class="text-sm text-gray-400 mt-10">
